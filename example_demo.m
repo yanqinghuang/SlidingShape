@@ -24,4 +24,5 @@ load(Allsvm{1});
 depth  = off2im_sys(offfile,1,Model.Rotation*pi,Model.Tilt,Model.Cx,Model.Cdepth,Model.Cheight,[1;1;1]*Model.Scale,1,0.1,0);
 figure,
 imagesc(depth);
+print('depthImage','-dpng')
 title('The depth map of this examplar')
